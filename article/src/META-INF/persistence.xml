@@ -3,5 +3,8 @@
 	<persistence-unit name="article"　transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<non-jta-data-source>java:comp/env/ds/article</non-jta-data-source>
+		<class>jp.co.comnic.lesson.webapp.article.model.Account</class>
+		<class>jp.co.comnic.lesson.webapp.article.model.Article</class>
+		<class>jp.co.comnic.lesson.webapp.article.model.Category</class>
 	</persistence-unit>
 </persistence>
