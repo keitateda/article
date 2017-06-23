@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagram>
+	<dbsetting>
+		<dbsystem>MySQL</dbsystem>
+		<server>192.168.78.128</server>
+		<port>3306</port>
+		<database>article</database>
+		<user>root</user>
+		<password>mariadb</password>
+		<use_default_driver>true</use_default_driver>
+		<url>jdbc:mysql://192.168.78.128:3306/article</url>
+		<driver_class_name>com.mysql.jdbc.Driver</driver_class_name>
+	</dbsetting>
 	<page_setting>
 		<direction_horizontal>true</direction_horizontal>
 		<scale>100</scale>
@@ -11,7 +22,7 @@
 	</page_setting>
 	<category_index>0</category_index>
 	<zoom>1.0</zoom>
-	<x>0</x>
+	<x>60</x>
 	<y>0</y>
 	<default_color>
 		<r>128</r>
@@ -138,7 +149,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2017-06-23 11:42:29</creation_date>
-			<updated_date>2017-06-23 13:40:03</updated_date>
+			<updated_date>2017-06-23 15:27:45</updated_date>
 			<model_property>
 				<name>プロジェクト名</name>
 				<value></value>
@@ -177,7 +188,7 @@
 	<dictionary>
 		<word>
 			<id>0</id>
-			<length>40</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -323,7 +334,7 @@
 			<connections>
 			</connections>
 			<physical_name>ACCOUNT</physical_name>
-			<logical_name>新規テーブル</logical_name>
+			<logical_name>アカウント</logical_name>
 			<description></description>
 			<constraint></constraint>
 			<primary_key_name></primary_key_name>
@@ -424,7 +435,7 @@
 			<connections>
 			</connections>
 			<physical_name>CATEGORY</physical_name>
-			<logical_name>新規テーブル</logical_name>
+			<logical_name>カテゴリ</logical_name>
 			<description></description>
 			<constraint></constraint>
 			<primary_key_name></primary_key_name>
@@ -536,7 +547,7 @@
 							<g>0</g>
 							<b>0</b>
 						</color>
-					<child_cardinality>1..n</child_cardinality>
+					<child_cardinality>0..n</child_cardinality>
 					<parent_cardinality>1</parent_cardinality>
 					<reference_for_pk>true</reference_for_pk>
 					<name></name>
@@ -547,7 +558,7 @@
 				</relation>
 			</connections>
 			<physical_name>ARTICLE</physical_name>
-			<logical_name>新規テーブル</logical_name>
+			<logical_name>記事</logical_name>
 			<description></description>
 			<constraint></constraint>
 			<primary_key_name></primary_key_name>
