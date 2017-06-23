@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+body {	font-family:'Tahoma';
+		background-color: #808080;
+		
+}
+
+h1 {font-size: 28px;
+	text-align: center;
+}
+
+header {background-color: #00ffff;
+		height:96px;
+}
+
+form {	background-color: #ffffff;
+		width: 500px;
+		height:260px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:auto;
+		margin-bottom:auto;
+		border-radius: 6px;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-size: 12px;
+	background: #D3D3D3;
+	width:100%;
+}

@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset=UTF-8>
+          <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+          <title>login</title>
+	</head>
+     <body>
+		<h1>Brog Site</h1>
+     		<form name="Login" method="post" action="/cgi-bin/Login.cgi">
+   		  		<table>
+   		  			<h1>Login</h1>
+   		  			<br>
+  		   			<tr>
+  			  			<td>
+  		     			<b>email:</b>
+ 		      			</td>
+						<td>
+  		   				<input type="text" name="uid" size="40" maxlength="16" autocomplete="OFF" />
+  		   	  			</td>
+					</tr>
+					<br>
+  		   			<tr>
+  		   	  			<td>
+  		   				<b>pass:</b>
+  		   	  			</td>
+    	 	 			<td>
+  		 				<input type="password" name="pwd" size="40" maxlength="16" autocomplete="OFF" />
+  		 	 			</td>
+  		 			</tr>
+  		 		</table>
+  		 		<br>
+     			<input type="submit" value="Login" />
+     		</form>
+     </body>
+</html>
