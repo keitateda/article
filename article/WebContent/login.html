@@ -1,39 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<!DOCTYPE html>
-<html>
-     <head>
-          <meta charset=UTF-8>
-          <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-          <title>login</title>
-	</head>
-     <body>
-     
-		<h1>Brog Site</h1>
-     		<form name="Login" method="post" action="/cgi-bin/Login.cgi">
-   		  		<table>
-   		  			<h1>Login</h1>
-   		  			<br>
-  		   			<tr>
-  			  			<td>
-  		     			<b>email:</b>
- 		      			</td>
-						<td>
-  		   				<input type="text" name="uid" size="40" maxlength="16" autocomplete="OFF" />
-  		   	  			</td>
-					</tr>
-					<br>
-  		   			<tr>
-  		   	  			<td>
-  		   				<b>pass:</b>
-  		   	  			</td>
-    	 	 			<td>
-  		 				<input type="password" name="pwd" size="40" maxlength="16" autocomplete="OFF" />
-  		 	 			</td>
-  		 			</tr>
-  		 		</table>
-  		 		<br>
-     			<input type="submit" value="Login" />
-     		</form>
-     </body>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<title>login</title>
+</head>
+
+ <body>
+<form>
+  <h1>Brog Site</h1>
+  
+  <input type="text" placeholder="email"/>
+  <input type="password" placeholder="Password"/>
+  <button>Login</button>
+  <div align="left"><a href="signUp.html">Create New Account</a></div>
+</form>
+ </body>
 </html>
