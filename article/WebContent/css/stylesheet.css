@@ -5,85 +5,14 @@
 @button: #f26964;
 @bottom: #ab4b47;
 
-/* @media screen and (min-width: 768px){
-	.main-contents-container{
-	overflow:hidden;
-}
-	.column1,column2 {
-	float:left
-}
-
-.main-contents-container{
-	padding:0 0 40px 0;
-	background:#ffffff;
-}
-
-.column1,column2 {
-	margin:20px
-}
-*/
-
 /* body　*/
 body {
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro',  '15px/1.25 ',Alefsans-serif;
 	background-color:gray
 }
 
-/* BOX2をバーの形に　*/
-.box2 {
-	background-color: silver;
-}
-
-/* BOXの上下間隔　*/
-.box1 {
-	padding-top: 8px;
-	padding-bottom: 8px
-}
-
-.box3 {
-	padding-top: 40px;
-	padding-bottom: 30px
-}
-
-.box4 {
-	padding-top: 40px;
-	padding-bottom: 30px
-}
-
-.box5 {
-	padding-top: 10px;
-	padding-bottom: 10px
-}
-
-.box6 {
-	padding-top: 40px;
-	padding-bottom: 30px
-}
-/* BOX3とBOX4横並びに　*/
-
-.boxA:after {
-	content:"";
-	display:block;
-	clear:both;
-}
-
-.box3 {
-	float:left;
-	width:60%;
-}
-
-.box4 {
-	float:left;
-	width:40%;
-	text-transform: lowercase;
-}
-
-/* BOX3とBOX4の左右間隔 */
-.box3 {
-	padding-right: 50px;
-	-moz-box-sizing: border-box;
-	-wedkit-box-sizing: border-box;
-	box-sizing: border-box;
+a{
+	text-decoration:none;
 }
 
 /* ログイン画面　*/
@@ -99,7 +28,6 @@ body {
   -webkit-transition: all @transition ease-in-out;
      -moz-transition: all @transition ease-in-out;
           transition: all @transition ease-in-out;
- 
 }
 
 * {
@@ -130,8 +58,7 @@ form > h1 {
 
 input {
   background:rgba(0, 0, 0, 0.2);
-  color:black;
-  text-shadow:1px 1px 0px rgba(0, 0, 0,0.3);
+  color:white;
   display:block;
   width:269px;
   padding:15px;
@@ -146,43 +73,42 @@ input:focus {
   .trans;
 }
 
+input a {
+	color: white;
+}
+
 ::-webkit-input-placeholder {
-   color: rgba(180, 180, 180, 0.8);
+	color: rgba(180, 180, 180, 0.8);
 }
 
 :-moz-placeholder {
-   color: rgba(225, 225, 225, 0.4); 
+	color: rgba(225, 225, 225, 0.4); 
 }
 
 ::-moz-placeholder {
-   color: rgba(225, 225, 225, 0.4);
+	color: rgba(225, 225, 225, 0.4);
 }
 
 :-ms-input-placeholder {  
-   color: rgba(225, 225, 225, 0.4);
+	color: rgba(225, 225, 225, 0.4);
 }
 
 button {
-  position:relative;
-  display:block;
-  margin-top:15px;
-  margin-bottom:15px;
-  padding:17px;
-  width:270px;
-  .rounded;
-  .trans;
-  font-size:1.2em;
-  background:@button;
-  color:@base;
-  box-shadow:0px 3px 0px @bottom;
-  cursor:pointer;
+	text-decoration:none;
+	position:relative;
+	display:block;
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:17px;
+	width:270px;
+	.rounded;
+	.trans;
+	font-size:1.2em;
+	background:@button;
+	color:@base;
+	box-shadow:0px 3px 0px @bottom;
+	cursor:pointer;
 }
-
-button:active {
-  top:3px;
-  box-shadow:none;
-}
-
 
 /* トップ画面 */
 
@@ -196,37 +122,7 @@ button:active {
 	font-size:30px
 }
 
-/* メニュー */
 
-.menu ul {
-	margin:0;
-	padding:0;
-	list-style:none
-}
-
-.menu li a {
-	display:block;
-	padding:12px;
-	width:100%;
-	color:@text;
-	font-size:18px;
-	text-decoration:none
-}
-
-.menu li a:hover {
-	background-color:#f5f5f5;
-}
-
-.menu ul:after {
-	content:"";
-	display:block;
-	clear:both
-}
-
-.menu li {
-	float:left;
-	width:auto
-}
 
 /* 記事タイトル一覧 */
 .article-list {
@@ -266,10 +162,9 @@ button:active {
 
 .box5 {
 	width:100%;
-	height:36px;
+	height:38px;
 	border-top: solid 1px #dddddd;
-	position:absolute;
-	bottom: 0px;
+	bottom: 0;
 }
 
 /* ヘッダーのコピーライト */
@@ -289,18 +184,12 @@ input.example2 {
 }
 
 /* 新規投稿　*/
-textarea{
-	width:100%;
-	height:100%;
-	resize: none;
-}
 textarea {
 	width:100%;
 	height:100%;
 	resize: none;
 	background:rgba(0, 0, 0, 0.2);
-	color:black;
-	text-shadow:1px 1px 0px rgba(0, 0, 0,0.3);
+	color:white;
 	display:block;
 	padding:15px;
 	margin-bottom:10px;
@@ -314,8 +203,12 @@ textarea:focus {
   .trans;
 }
 
+textarea a{
+	color: white;
+}
+
 ::-webkit-textarea-placeholder {
-   color: rgba(180, 180, 180, 0.8);
+   color: rgba(225, 225, 225, 0.4);
 }
 
 :-moz-placeholder {
@@ -330,3 +223,162 @@ textarea:focus {
    color: rgba(225, 225, 225, 0.4);
 }
 
+button:active {
+	top:3px;
+	box-shadow:none;
+}
+
+/* メニュー */
+
+.menu ul {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+
+.menu li a {
+	display:block;
+	padding:12px;
+	width:100%;
+	color:@text;
+	font-size:18px;
+	text-decoration:none
+}
+
+.menu li a:hover {
+	background-color:#f5f5f5;
+}
+
+.menu ul:after {
+	content:"";
+	display:block;
+	clear:both
+}
+
+.menu li {
+	float:left;
+	width:auto
+}
+
+/* BOX2をバーの形に　*/
+.box2 {
+	background-color: silver;
+}
+
+/* BOXの上下間隔　*/
+.box1 {
+	padding-top: 8px;
+	padding-bottom: 8px
+}
+
+.box3 {
+	padding-top: 40px;
+	padding-bottom: 30px
+}
+
+.box4 {
+	padding-top: 40px;
+	padding-bottom: 30px
+}
+
+.box5 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* ########## 599px以下 ########## */
+@media (max-width: 599px){
+	
+/* メニュー */
+.menu li a	{
+	padding: 10px 3px;
+	font-size: 11px}
+
+}
+
+/* BOXの上下間隔　*/
+.box1 {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.box3 {
+	padding-top: 25px
+}
+}
+
+/* ########## 600px以上～767px以下 ########## */
+@media(min-width:600px)and(max-width: 767){
+/* BOX4-1とBOX4-2を横に並べる*/
+.box4:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.box4-1 {
+	float: left;
+	width: 50%;
+}
+
+.box4-2 {
+	float: left;
+	widh: 50%;
+}
+
+.box4-1 {
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.box4-2 {
+	padding-left: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+}
+
+@media (min-width: 768px){
+/* BOX3とBOX4横並びに　*/
+
+.boxA:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.box3 {
+	float:left;
+	width:60%;
+}
+
+.box4 {
+	float:left;
+	width:40%;
+	text-transform: lowercase;
+}
+
+/* BOX3とBOX4の左右間隔 */
+.box3 {
+	padding-right: 50px;
+	-moz-box-sizing: border-box;
+	-wedkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+}
+
+/* ########## 1040px以上 ########## */
+@media (min-width: 1040px){
+	
+/* 全体の横幅を固定　*/
+.box1,.box2,.boxA,.box5{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+/* ぬわ～　*/
