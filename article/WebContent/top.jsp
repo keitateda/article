@@ -23,7 +23,7 @@
 			<li><a href="top.html">TOP</a></li>
 			<li><a href="newArticle.html">新規投稿</a></li>
 			<li><a href="#">ユーザ</a></li>
-			<li><a href="login.html">ログアウト</a></li>
+			<li><a href="login.jsp">ログアウト</a></li>
 		</ul>
 	</nav>
 </div>
