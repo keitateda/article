@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 	
-	<display-name>ems-v3</display-name>
+	<display-name>article</display-name>
 	
 	<!-- Settings for actions (*.do) -->	
 	<context-param>
 		<param-name>/login.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.LoginAction</param-value>
+		<param-value>jp.co.comnic.javalesson.webapp.article.controller.LoginAction</param-value>
 	</context-param>
 	
 	<context-param>
@@ -18,33 +18,18 @@
 	</context-param>
 	
 	<context-param>
-		<param-name>/departments/remove.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.RemoveAction</param-value>
+		<param-name>/articles/remove.do</param-name>
+		<param-value>jp.co.comnic.javalesson.webapp.article.controller.RemoveAction</param-value>
 	</context-param>
 	
 	<context-param>
-		<param-name>/employees/remove.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.RemoveAction</param-value>
+		<param-name>/articles/insert.do</param-name>
+		<param-value>jp.co.comnic.javalesson.webapp.article.controller.InsertAction</param-value>
 	</context-param>
 	
 	<context-param>
-		<param-name>/departments/insert.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.InsertAction</param-value>
-	</context-param>
-	
-	<context-param>
-		<param-name>/employees/insert.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.InsertAction</param-value>
-	</context-param>
-	
-	<context-param>
-		<param-name>/departments/edit.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.UpdateAction</param-value>
-	</context-param>
-	
-	<context-param>
-		<param-name>/employees/edit.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.UpdateAction</param-value>
+		<param-name>/articles/edit.do</param-name>
+		<param-value>jp.co.comnic.javalesson.webapp.article.controller.UpdateAction</param-value>
 	</context-param>
 	
 	<!-- Settings for JSP pages -->	
@@ -59,16 +44,6 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>DepartmentNew</servlet-name>
-		<jsp-file>/departments/new.jsp</jsp-file>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>DepartmentNew</servlet-name>
-		<url-pattern>/departments/new</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
 		<servlet-name>EmployeeNew</servlet-name>
 		<jsp-file>/employees/new.jsp</jsp-file>
 	</servlet>
@@ -76,16 +51,6 @@
 	<servlet-mapping>
 		<servlet-name>EmployeeNew</servlet-name>
 		<url-pattern>/employees/new</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>DepartmentEdit</servlet-name>
-		<jsp-file>/departments/edit.jsp</jsp-file>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>DepartmentEdit</servlet-name>
-		<url-pattern>/departments/edit</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
