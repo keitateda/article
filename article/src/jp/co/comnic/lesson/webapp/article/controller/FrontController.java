@@ -14,10 +14,26 @@ import javax.servlet.http.HttpServletResponse;
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-		protected void doService(HttpServletRequest request, HttpServletResponse responce) throws ServletException{
+	protected void doService(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
 			
-			Action action = ActionFactory.getAction(request.getServletPath());	
+		Action action = ActionFactory.getAction(request.getServletPath());
+			
+		String forwardPath = action.excute(request, response);
+		
+		if (forwardPath != null){
+			
+			request.getRequestDispatcher(forwardPath).forward(request, response);
 		}
+	}
 	
+	
+	protected void doget(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+		doService(request, response);
+	}
+	
+	protected void dopost(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+		doService(request, response);
+		
+	}
 
 }
