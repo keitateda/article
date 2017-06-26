@@ -20,5 +20,6 @@
   </fieldset>
   <div align="left"><a href="signUp.html">Create New Account</a></div>
 </form>
+<p class="error">${error}</p>
  </body>
 </html>
