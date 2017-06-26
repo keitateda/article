@@ -16,18 +16,7 @@
 	</div>
 </div>
 
-<!-- おそらくpage-header.jspに記述 -->
-<div class="box2">
-	<nav class="menu">
-		<ul>
-			<li><a href="top.html">TOP</a></li>
-			<li><a href="newArticle.html">新規投稿</a></li>
-			<li><a href="#">ユーザ</a></li>
-			<li><a href="login.jsp">ログアウト</a></li>
-		</ul>
-	</nav>
-</div>
-<!----------------------------->
+<jsp:include page="page-header.jsp"></jsp:include>
 
 <div class="boxA">
 	<div class="box3">
@@ -57,15 +46,7 @@
 	</div>
 </div>
 
-<!-- おそらくpage-footer.jspに記述 -->
-
-<div class="box5">
-	<div class="copyright">
-	<p>Copyright &copy; Brog Site</p>
-	</div>
-</div>
-
-<!------------------------------>
+<jsp:include page="page-footer.jsp"></jsp:include>
 </body>
 
 </html>

@@ -1,8 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 
-<h1><a href="top.jsp">Brog Site</a></h1>
-
-<form　action="/search-result" method="post">
-</form>
-<br><br>
+<div class="box2">
+	<nav class="menu">
+		<ul>
+			<li><a href="top.html">TOP</a></li>
+			<li><a href="new-article.html">新規投稿</a></li>
+			<li><a href="#">ユーザ</a></li>
+			<li><a href="login.jsp">ログアウト</a></li>
+		</ul>
+	</nav>
+</div>
