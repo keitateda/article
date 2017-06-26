@@ -5,10 +5,4 @@
 
 <form　action="/search-result" method="post">
 </form>
-
-
-<a href="top.jsp">TOP</a>
-<a href="new.jsp">記事投稿</a>
-<a href="logout.jsp">log out</a>
-
 <br><br>
