@@ -5,8 +5,6 @@ import java.util.Date;
 import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.converters.DateConverter;
@@ -27,7 +25,7 @@ public class ContorollerUtils {
 
 		}
 		
-	public static void populateEntity(HttpServletRequest request, HttpServletResponse responce, Object entity) throws DaoException{
+	public static void populateEntity(HttpServletRequest request, Object entity) throws DaoException{
 			
 			java.util.Map<String, String[]> parameterMap = request.getParameterMap();
 			java.util.Map<String, String> propertyMap = new HashMap<>();
