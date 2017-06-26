@@ -4,7 +4,7 @@
 	          driverClassName="com.mysql.jdbc.Driver"
 	          url="jdbc:mysql://192.168.78.128/article"
 	          username="root"
-	          password="lastjob"
+	          password="mariadb"
 	/>
 	
 </Context>

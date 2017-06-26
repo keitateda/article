@@ -12,6 +12,7 @@ public class ActionFactory implements ServletContextListener {
 	private static ServletContext context;
 	
 	public static Action getAction(String servletPath) throws ServletException {
+		
 		Action action = null;
 		
 		String actionClassName = context.getInitParameter(servletPath);
@@ -27,18 +28,20 @@ public class ActionFactory implements ServletContextListener {
 		
 		return action;
 	}
-	
-	
+
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void contextInitialized(ServletContextEvent sce) {
 		// TODO Auto-generated method stub
 		context = sce.getServletContext();
 	}
 
-	@Override
-	public void contextInitialized(ServletContextEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
+	
+	
 }

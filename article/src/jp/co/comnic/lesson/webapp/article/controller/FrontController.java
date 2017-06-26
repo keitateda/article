@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class FrontController
  */
-@WebServlet("*.do")
+@WebServlet("login.do")
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
@@ -18,7 +18,7 @@ public class FrontController extends HttpServlet {
 			
 		Action action = ActionFactory.getAction(request.getServletPath());
 			
-		String forwardPath = action.excute(request, response);
+		String forwardPath = action.execute(request, response);
 		
 		if (forwardPath != null){
 			
@@ -27,13 +27,35 @@ public class FrontController extends HttpServlet {
 	}
 	
 	
-	protected void doget(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
-		doService(request, response);
-	}
+
 	
-	protected void dopost(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+	
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		super.doGet(request, response);
 		doService(request, response);
-		
 	}
+
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		super.doPost(request, response);
+		doService(request, response);
+	}
+
+
+
+
+
+//	@Override
+//	protected void doget(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+//		doService(request, response);
+//	}
+//	
+//	@Override
+//	protected void dopost(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+//		doService(request, response);	
+//	}
 
 }

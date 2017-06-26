@@ -12,7 +12,7 @@ import jp.co.comnic.lesson.webapp.article.model.Account;
 
 public class LoginAction implements Action {
 	
-	
+	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		
@@ -31,8 +31,8 @@ public class LoginAction implements Action {
 				request.getSession().setAttribute("LoginEmail", account.getEmail());
 				
 				forwardPath = null;
-				response.sendRedirect("/" + request.getServletContext().getServletContextName() + "top.jsp");
-//				response.sendRedirect("/bookStore/Top.jsp");
+//				response.sendRedirect("/" + request.getServletContext().getServletContextName() + "/top.jsp");
+				response.sendRedirect("/bookStore/Top.jsp");
 				
 			}else{
 				request.setAttribute("error", "メールアドレスもしくはパスワードが違います");
@@ -45,11 +45,5 @@ public class LoginAction implements Action {
 			
 			return forwardPath;
 		}
-
-	@Override
-	public String excute(HttpServletRequest request, HttpServletResponse responce)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		return null;
 	}
-}
+

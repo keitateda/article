@@ -12,10 +12,6 @@
 		<param-value>jp.co.comnic.javalesson.webapp.article.controller.LoginAction</param-value>
 	</context-param>
 	
-	<context-param>
-		<param-name>/logout.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.ems.controller.LogoutAction</param-value>
-	</context-param>
 	
 	<context-param>
 		<param-name>/articles/remove.do</param-name>
@@ -43,24 +39,5 @@
 		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 	
-	<servlet>
-		<servlet-name>EmployeeNew</servlet-name>
-		<jsp-file>/employees/new.jsp</jsp-file>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>EmployeeNew</servlet-name>
-		<url-pattern>/employees/new</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>EmployeeEdit</servlet-name>
-		<jsp-file>/employees/edit.jsp</jsp-file>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>EmployeeEdit</servlet-name>
-		<url-pattern>/employees/edit</url-pattern>
-	</servlet-mapping>
 	
 </web-app>

@@ -20,5 +20,6 @@ public interface Action {
 	 * @throws ServletException
 	 * @throws IOException
 	 */
-	public String excute(HttpServletRequest request, HttpServletResponse responce)throws ServletException, IOException;
+
+	String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
 }
