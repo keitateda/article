@@ -1,19 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-		<title>Insert title here</title>
-	</head>
-		<body>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
+<title>新規投稿</title>
+</head>
+	<body>
+	<div class="main">
 
-		<header>
-		<h1>Brog Site</h1>
-		</header>
-			 
-		<footer>
-		<small>Copyright &copy; comnic - 2017,all rights reserved.</small>
-		</footer>
-		</body>
+	<div class="box1">
+		<div class="site">
+			<h1>Brog Site</h1>
+		</div>
+	</div>
+
+<!-- おそらくpage-header.jspに記述 -->
+	<div class="box2">
+		<nav class="menu">
+			<ul>
+				<li><a href="top.html">TOP</a></li>
+				<li><a href="newArticle.html">新規投稿</a></li>
+				<li><a href="#">ユーザ</a></li>
+				<li><a href="login.html">ログアウト</a></li>
+			</ul>
+		</nav>
+	</div>
+<!----------------------------->
+<div class="boxA">
+	<div class="box3">
+		<article class="article-list">
+		<p>新規投稿</p>
+		<form method="post" action="example.cgi">
+			<input type="title" placeholder="タイトル"/>
+			<textarea name="msg" cols="50" rows="10" wrap="" placeholder="内容を入力"></textarea>
+		</form>
+		</article>
+	</div>
+
+	<div class="box4">
+	<aside class="sidemenu">
+	<br><br><br><br><br><br><br><br>
+		<button>投稿</button>
+	<aside class="sidemenu">
+		<button >戻る</button>
+	</aside>
+	</div>
+</div>
+
+
+</div>
+<div class="box5">
+	<div class="copyright">
+	<p>Copyright &copy; Brog Site</p>
+	</div>
+</div>
 </html>
