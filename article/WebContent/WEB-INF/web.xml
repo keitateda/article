@@ -41,7 +41,7 @@
 	
 	<servlet>
 		<servlet-name>Top</servlet-name>
-		<jsp-file>/top.html</jsp-file>
+		<jsp-file>/top.jsp</jsp-file>
 	</servlet>
 	
 	<servlet-mapping>

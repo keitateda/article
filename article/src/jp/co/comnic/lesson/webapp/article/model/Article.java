@@ -15,9 +15,12 @@ public class Article implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private String title;
+	@Column(name="article_id")
+	private int articleId;
 
 	private String contents;
+
+	private String title;
 
 	@Temporal(TemporalType.DATE)
 	@Column(name="upload_day")
@@ -33,12 +36,12 @@ public class Article implements Serializable {
 	public Article() {
 	}
 
-	public String getTitle() {
-		return this.title;
+	public int getArticleId() {
+		return this.articleId;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setArticleId(int articleId) {
+		this.articleId = articleId;
 	}
 
 	public String getContents() {
@@ -47,6 +50,14 @@ public class Article implements Serializable {
 
 	public void setContents(String contents) {
 		this.contents = contents;
+	}
+
+	public String getTitle() {
+		return this.title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public Date getUploadDay() {

@@ -22,7 +22,7 @@
 	</page_setting>
 	<category_index>0</category_index>
 	<zoom>1.0</zoom>
-	<x>60</x>
+	<x>0</x>
 	<y>0</y>
 	<default_color>
 		<r>128</r>
@@ -149,7 +149,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2017-06-23 11:42:29</creation_date>
-			<updated_date>2017-06-23 15:34:30</updated_date>
+			<updated_date>2017-06-26 17:15:28</updated_date>
 			<model_property>
 				<name>プロジェクト名</name>
 				<value></value>
@@ -188,6 +188,22 @@
 	<dictionary>
 		<word>
 			<id>0</id>
+			<length>null</length>
+			<decimal>null</decimal>
+			<array>false</array>
+			<array_dimension>null</array_dimension>
+			<unsigned>false</unsigned>
+			<zerofill>false</zerofill>
+			<binary>false</binary>
+			<args></args>
+			<char_semantics>false</char_semantics>
+			<description></description>
+			<logical_name>article_id</logical_name>
+			<physical_name>article_id</physical_name>
+			<type>integer</type>
+		</word>
+		<word>
+			<id>1</id>
 			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -203,7 +219,7 @@
 			<type>varchar(n)</type>
 		</word>
 		<word>
-			<id>1</id>
+			<id>2</id>
 			<length>20</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -219,7 +235,7 @@
 			<type>varchar(n)</type>
 		</word>
 		<word>
-			<id>2</id>
+			<id>3</id>
 			<length>null</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -235,7 +251,7 @@
 			<type>integer</type>
 		</word>
 		<word>
-			<id>3</id>
+			<id>4</id>
 			<length>20</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -251,7 +267,7 @@
 			<type>varchar(n)</type>
 		</word>
 		<word>
-			<id>4</id>
+			<id>5</id>
 			<length>20</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -267,7 +283,7 @@
 			<type>varchar(n)</type>
 		</word>
 		<word>
-			<id>5</id>
+			<id>6</id>
 			<length>30</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -283,7 +299,7 @@
 			<type>varchar(n)</type>
 		</word>
 		<word>
-			<id>6</id>
+			<id>7</id>
 			<length>null</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -299,7 +315,7 @@
 			<type>date</type>
 		</word>
 		<word>
-			<id>7</id>
+			<id>8</id>
 			<length>20</length>
 			<decimal>null</decimal>
 			<array>false</array>
@@ -324,8 +340,8 @@
 			<width>202</width>
 				<font_name>Yu Gothic UI</font_name>
 				<font_size>9</font_size>
-			<x>383</x>
-			<y>36</y>
+			<x>120</x>
+			<y>12</y>
 			<color>
 				<r>128</r>
 				<g>128</g>
@@ -341,7 +357,7 @@
 			<option></option>
 			<columns>
 				<normal_column>
-					<word_id>1</word_id>
+					<word_id>2</word_id>
 					<id>0</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -374,7 +390,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>4</word_id>
+					<word_id>5</word_id>
 					<id>1</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -425,8 +441,8 @@
 			<width>232</width>
 				<font_name>Yu Gothic UI</font_name>
 				<font_size>9</font_size>
-			<x>368</x>
-			<y>396</y>
+			<x>105</x>
+			<y>312</y>
 			<color>
 				<r>128</r>
 				<g>255</g>
@@ -442,7 +458,7 @@
 			<option></option>
 			<columns>
 				<normal_column>
-					<word_id>2</word_id>
+					<word_id>3</word_id>
 					<id>2</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -475,7 +491,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>3</word_id>
+					<word_id>4</word_id>
 					<id>3</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -526,8 +542,8 @@
 			<width>223</width>
 				<font_name>Yu Gothic UI</font_name>
 				<font_size>9</font_size>
-			<x>372</x>
-			<y>156</y>
+			<x>109</x>
+			<y>120</y>
 			<color>
 				<r>255</r>
 				<g>128</g>
@@ -565,13 +581,13 @@
 			<option></option>
 			<columns>
 				<normal_column>
-					<word_id>5</word_id>
+					<word_id>0</word_id>
 					<id>4</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
 					<physical_name></physical_name>
-					<type>varchar(n)</type>
+					<type>integer</type>
 					<constraint></constraint>
 					<default_value></default_value>
 					<auto_increment>false</auto_increment>
@@ -598,7 +614,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>0</word_id>
+					<word_id>6</word_id>
 					<id>5</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -631,13 +647,13 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>6</word_id>
+					<word_id>1</word_id>
 					<id>6</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
 					<physical_name></physical_name>
-					<type>date</type>
+					<type>varchar(n)</type>
 					<constraint></constraint>
 					<default_value></default_value>
 					<auto_increment>false</auto_increment>
@@ -670,6 +686,39 @@
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
 					<physical_name></physical_name>
+					<type>date</type>
+					<constraint></constraint>
+					<default_value></default_value>
+					<auto_increment>false</auto_increment>
+					<foreign_key>false</foreign_key>
+					<not_null>true</not_null>
+					<primary_key>false</primary_key>
+					<unique_key>false</unique_key>
+					<character_set></character_set>
+					<collation></collation>
+					<sequence>
+						<name></name>
+						<schema></schema>
+						<increment></increment>
+						<min_value></min_value>
+						<max_value></max_value>
+						<start></start>
+						<cache></cache>
+						<nocache>false</nocache>
+						<cycle>false</cycle>
+						<order>false</order>
+						<description></description>
+						<data_type></data_type>
+						<decimal_size>0</decimal_size>
+					</sequence>
+				</normal_column>
+				<normal_column>
+					<word_id>8</word_id>
+					<id>8</id>
+					<description></description>
+					<unique_key_name></unique_key_name>
+					<logical_name></logical_name>
+					<physical_name></physical_name>
 					<type>varchar(n)</type>
 					<constraint></constraint>
 					<default_value></default_value>
@@ -697,7 +746,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<id>8</id>
+					<id>9</id>
 					<referenced_column>2</referenced_column>
 					<relation>0</relation>
 					<description></description>
@@ -816,44 +865,52 @@
 						<data>
 							<column_data>
 								<column_id>4</column_id>
-								<value>sample</value>
+								<value></value>
 							</column_data>
 							<column_data>
 								<column_id>5</column_id>
-								<value>サンプルです</value>
+								<value>sample</value>
 							</column_data>
 							<column_data>
 								<column_id>6</column_id>
-								<value>20170623</value>
+								<value>サンプルです</value>
 							</column_data>
 							<column_data>
 								<column_id>7</column_id>
-								<value>立田</value>
+								<value>20170623</value>
 							</column_data>
 							<column_data>
 								<column_id>8</column_id>
+								<value>立田</value>
+							</column_data>
+							<column_data>
+								<column_id>9</column_id>
 								<value>1</value>
 							</column_data>
 						</data>
 						<data>
 							<column_data>
 								<column_id>4</column_id>
-								<value>test</value>
+								<value></value>
 							</column_data>
 							<column_data>
 								<column_id>5</column_id>
-								<value>テスト</value>
+								<value>test</value>
 							</column_data>
 							<column_data>
 								<column_id>6</column_id>
-								<value>20170623</value>
+								<value>テスト</value>
 							</column_data>
 							<column_data>
 								<column_id>7</column_id>
-								<value>立田</value>
+								<value>20170623</value>
 							</column_data>
 							<column_data>
 								<column_id>8</column_id>
+								<value>立田</value>
+							</column_data>
+							<column_data>
+								<column_id>9</column_id>
 								<value>1</value>
 							</column_data>
 						</data>
@@ -863,6 +920,21 @@
 						<data_def_list>
 							<data_def>
 								<column_id>4</column_id>
+								<type>format</type>
+								<repeat_num>1</repeat_num>
+								<template>%</template>
+								<from>1</from>
+								<to>100</to>
+								<increment>1</increment>
+								<select>1</select>
+								<select>2</select>
+								<select>3</select>
+								<select>4</select>
+								<modified_values>
+								</modified_values>
+							</data_def>
+							<data_def>
+								<column_id>5</column_id>
 								<type>format</type>
 								<repeat_num>1</repeat_num>
 								<template>記事タイトル_%</template>
@@ -877,7 +949,7 @@
 								</modified_values>
 							</data_def>
 							<data_def>
-								<column_id>5</column_id>
+								<column_id>6</column_id>
 								<type>format</type>
 								<repeat_num>1</repeat_num>
 								<template>内容_%</template>
@@ -892,7 +964,7 @@
 								</modified_values>
 							</data_def>
 							<data_def>
-								<column_id>6</column_id>
+								<column_id>7</column_id>
 								<type>format</type>
 								<repeat_num>1</repeat_num>
 								<template>2000-01-% 12:00:00.000</template>
@@ -907,7 +979,7 @@
 								</modified_values>
 							</data_def>
 							<data_def>
-								<column_id>7</column_id>
+								<column_id>8</column_id>
 								<type>format</type>
 								<repeat_num>1</repeat_num>
 								<template>upload_name_%</template>
@@ -922,7 +994,7 @@
 								</modified_values>
 							</data_def>
 							<data_def>
-								<column_id>8</column_id>
+								<column_id>9</column_id>
 								<type>foreign.key</type>
 								<repeat_num>1</repeat_num>
 								<template>%</template>
