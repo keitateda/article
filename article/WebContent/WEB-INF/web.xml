@@ -9,7 +9,7 @@
 	<!-- Settings for actions (*.do) -->	
 	<context-param>
 		<param-name>/login.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.article.controller.LoginAction</param-value>
+		<param-value>jp.co.comnic.lesson.webapp.article.controller.LoginAction</param-value>
 	</context-param>
 	
 	
@@ -37,6 +37,16 @@
 	<servlet-mapping>
 		<servlet-name>Login</servlet-name>
 		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Top</servlet-name>
+		<jsp-file>/top.html</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Top</servlet-name>
+		<url-pattern>/top</url-pattern>
 	</servlet-mapping>
 	
 	

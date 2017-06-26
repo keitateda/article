@@ -1,4 +1,5 @@
 package jp.co.comnic.lesson.webapp.article.controller;
+//      jp.co.comnic.javalesson.webapp.article.controller.LoginAction
 
 import java.io.IOException;
 
@@ -31,8 +32,8 @@ public class LoginAction implements Action {
 				request.getSession().setAttribute("LoginEmail", account.getEmail());
 				
 				forwardPath = null;
-//				response.sendRedirect("/" + request.getServletContext().getServletContextName() + "/top.jsp");
-				response.sendRedirect("/bookStore/Top.jsp");
+				response.sendRedirect("/" + request.getServletContext().getServletContextName() + "/top.jsp");
+//				response.sendRedirect("/bookStore/Top.jsp");
 				
 			}else{
 				request.setAttribute("error", "メールアドレスもしくはパスワードが違います");

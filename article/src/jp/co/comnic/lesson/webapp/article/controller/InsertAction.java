@@ -12,7 +12,7 @@ import jp.co.comnic.lesson.webapp.article.dao.DaoException;
 public class InsertAction implements Action {
 
 	@Override
-	public String excute(HttpServletRequest request, HttpServletResponse responce)
+	public String execute(HttpServletRequest request, HttpServletResponse responce)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
