@@ -13,6 +13,12 @@
 	</context-param>
 	
 	
+	
+	<context-param>
+		<param-name>/logout.do</param-name>
+		<param-value>jp.co.comnic.lesson.webapp.article.controller.LogoutAction</param-value>
+	</context-param>
+	
 	<context-param>
 		<param-name>/articles/remove.do</param-name>
 		<param-value>jp.co.comnic.javalesson.webapp.article.controller.RemoveAction</param-value>
@@ -47,6 +53,16 @@
 	<servlet-mapping>
 		<servlet-name>Top</servlet-name>
 		<url-pattern>/top</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<jsp-file>/logout.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
 	
 	
