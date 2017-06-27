@@ -25,7 +25,7 @@
 		<p>新規投稿</p>
 		<form method="post" action="Insert.do">
 		<fieldset>
-				<input type="title" name="title" placeholder="タイトル"/>
+				<input type="" name="title" placeholder="タイトル"/>
 				<input type="date" name="date"/>
 				<textarea name="content" cols="30" rows="10" wrap="" placeholder="内容を入力"></textarea>
 				<input type="submit" value="投稿">
