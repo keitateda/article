@@ -1,13 +1,19 @@
 package jp.co.comnic.lesson.webapp.article.dao;
 
-import javax.persistence.Query;
+import java.util.List;
+
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 import jp.co.comnic.lesson.webapp.article.model.Article;
 
 public class ArticleDao  extends Basedao{
 
-	public Query findByTitle(String title){
-		Query contents = em.createNamedQuery("Article.findAll").setParameter("title", title);
+	private CriteriaQuery<Article> query = builder.createQuery(Article.class);
+	private Root<Article> root = query.from(Article.class);
+	
+	public Object findByTitle(String title){
+		Object contents = em.createNamedQuery("Article.findAll").setParameter("title", title).getSingleResult();
 		return contents;
 	} 
 	
@@ -15,13 +21,12 @@ public class ArticleDao  extends Basedao{
 		return super.findById(Article.class, id);
 	}
 	
-	public Query viewTitle(){
-		
-		Query query  = em.createNamedQuery("Article.viewTitle");
-		
-		return query;
-		
-		
+	public List<Article> findAll(){
+		return super.findAll(query, root);
 	}
+		
+		
+		
+	
 	
 }
