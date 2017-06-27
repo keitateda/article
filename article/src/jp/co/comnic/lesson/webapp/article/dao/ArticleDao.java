@@ -15,6 +15,13 @@ public class ArticleDao  extends Basedao{
 		return super.findById(Article.class, id);
 	}
 	
-	
+	public Query viewTitle(){
+		
+		Query query  = em.createNamedQuery("Article.viewTitle");
+		
+		return query;
+		
+		
+	}
 	
 }
