@@ -8,8 +8,6 @@
 </head>
 
 <body>
-<div class="main">
-
 <div class="box1">
 	<div class="site">
 		<h1>Brog Site</h1>
@@ -21,7 +19,7 @@
 <div class="boxA">
 	<div class="box3">
 		<article class="article-list">
-		<p>記事タイトル一覧</p>
+		<h1>記事タイトル一覧</h1>
 			<ul>
 			<li><a href="#">記事<a></li>
 			<li><a href="#">記事<a></li>
@@ -34,11 +32,11 @@
 
 	<div class="box4">
 		<aside class="sidemenu">
-		<h1>記事検索</h1>
+		<p>記事検索</p>
 		<input type="search" placeholder="記事のタイトルor日付を入力"/>
 		<button>検索</button>
 	<aside class="sidemenu">
-		<h1>記事編集</h1>
+		<p>記事編集</p>
 		<input type="search" placeholder="記事のタイトルを入力"/>
 		<a href="edit-article.html"><button>編集</button></a>
 		<a href="delete.html"><button>削除</button></a>

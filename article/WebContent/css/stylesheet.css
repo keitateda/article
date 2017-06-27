@@ -8,7 +8,7 @@
 /* body　*/
 body {
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro',  '15px/1.25 ',Alefsans-serif;
-	background-color:gray
+	background-color:#7f8c8d;
 }
 
 a{
@@ -153,10 +153,9 @@ button {
 }
 
 
-.sidemenu h1 {
+.sidemenu p {
 	margin-top:0;
 	margin-bottom:10px;
-	border-bottom: dotted 2px gray;
 	color:@text;
 	font-size:18px
 }
@@ -263,7 +262,7 @@ button:active {
 
 /* BOX2をバーの形に　*/
 .box2 {
-	background-color: silver;
+	background-color: #bdc3c7;
 }
 
 /* BOXの上下間隔　*/
@@ -340,6 +339,8 @@ button:active {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+
 }
 
 @media (min-width: 768px){
