@@ -5,38 +5,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import jp.co.comnic.lesson.webapp.article.dao.ArticleDao;
 import jp.co.comnic.lesson.webapp.article.model.Article;
 
-public class ToppageAction implements Action {
-	ArticleDao ad;
+public class ToppageAction  {
 	List<Article> articles = new ArrayList<>();
-	
-	@Override
-	public String execute(HttpServletRequest request, HttpServletResponse response)
+		
+	/**
+	 *全件検索によって出力されたデータをlistに格納し、戻り値として戻す。
+	 * @return List<Article>
+	 * @throws ServletException
+	 * @throws IOException
+	 */
+	public List<Article> getAll()
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		
-		
 		try {
-			articles = ad.findAll();
-			request.getSession().setAttribute("articles", articles);
-			response.sendRedirect("top.jsp");
-			
+			articles = new ArticleDao().findAll();
+
 		} catch (Exception e) {
 			// TODO: handle exception
-			
-		
+			e.printStackTrace();
 		}
-		
-		
-		
-		
-		return null;
+		return articles;
 	}
 
 }

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
@@ -21,11 +21,9 @@
 		<article class="article-list">
 		<h1>記事タイトル一覧</h1>
 			<ul>
-			<li><a href="#">記事<a></li>
-			<li><a href="#">記事<a></li>
-			<li><a href="#">記事<a></li>
-			<li><a href="#">記事<a></li>
-			<li><a href="#">記事<a></li>
+				<c:forEach var="article" items="${articles}">
+				<li><a href="article.jsp">記事:${article.title}</a></li>
+				</c:forEach>
 			</ul>
 		</article>
 	</div>
