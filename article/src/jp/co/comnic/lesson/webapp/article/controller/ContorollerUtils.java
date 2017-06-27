@@ -25,6 +25,8 @@ public class ContorollerUtils {
 
 		}
 		
+	
+	
 	public static void populateEntity(HttpServletRequest request, Object entity) throws DaoException{
 			
 			java.util.Map<String, String[]> parameterMap = request.getParameterMap();
