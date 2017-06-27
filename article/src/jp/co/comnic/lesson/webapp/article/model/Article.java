@@ -36,6 +36,17 @@ public class Article implements Serializable {
 	public Article() {
 	}
 
+	//id以外の項目がセットされたコンストラクタ
+	public Article(String contents, String title, Date uploadDay, String uploadName, Category category) {
+		super();
+		this.contents = contents;
+		this.title = title;
+		this.uploadDay = uploadDay;
+		this.uploadName = uploadName;
+		this.category = category;
+	}
+
+
 	public int getArticleId() {
 		return this.articleId;
 	}
