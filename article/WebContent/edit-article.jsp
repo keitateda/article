@@ -8,13 +8,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
 <title>記事の編集</title>
 </head>
-	<body>
-	<div class="box1">
-		<div class="site">
-			<h1>Brog Site</h1>
-		</div>
-	</div>
-
+<body>
 <jsp:include page="page-header.jsp"></jsp:include>
 
 <div class="boxA">

@@ -10,12 +10,6 @@
 </head>
 
 <body>
-<div class="box1">
-	<div class="site">
-		<h1>Brog Site</h1>
-	</div>
-</div>
-
 <jsp:include page="page-header.jsp"></jsp:include>
 
 <div class="boxA">

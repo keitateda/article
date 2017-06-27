@@ -6,40 +6,34 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
-<title>新規投稿</title>
+<title>ユーザ</title>
 </head>
-	<body>
+<body>
 <jsp:include page="page-header.jsp"></jsp:include>
-
 <div class="boxA">
 	<div class="box3">
 		<article class="article-list">
-		<p>新規投稿</p>
-		<form method="post" action="Insert.do">
-		<fieldset>
-				<input type="" name="title" placeholder="タイトル"/>
-				<input type="date" name="date"/>
-				<textarea name="content" cols="30" rows="10" wrap="" placeholder="内容を入力"></textarea>
-		</fieldset>		
-		</form>
+		<h1>ユーザ情報</h1>
+		<br></br>
+		<p><img src="face.png" alt="アイコン" /></p>	
+		<br>
+			<ul>
+				<li>userName・emailなど</li>
+			</ul>
 		</article>
 	</div>
 
-	<div class="box4">
-		<p>新しく投稿する記事を作成します。</p>
-		<p>タイトル・日付・内容を入力して下さい。</p>
-			<br><br><br></br></br></br></br></br>
-		<aside class="sidemenu">
-		<button>投稿</button>
-		<a href="top.jsp"><button>戻る</button></a>
-		</aside>
+<div class="box4">
+	<p>ユーザの情報ページです。</p>
+	<p>確認・編集ができます。</p>
+	<br><br><br></br></br></br></br></br>
+		<button>編集</button>
+	<aside class="sidemenu">
+		<a href="top.html"><button>戻る</button></a>
+	</aside>
+	</div>
 	</div>
 </div>
-
-
-</div>
-
 <jsp:include page="page-footer.jsp"></jsp:include>
-
 </body>
 </html>

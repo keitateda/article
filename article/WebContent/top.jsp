@@ -3,16 +3,10 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-<!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
 <title>top</title>
 </head>
 
 <body>
-<div class="box1">
-	<div class="site">
-		<h1>Brog Site</h1>
-	</div>
-</div>
 
 <jsp:include page="page-header.jsp"></jsp:include>
 
@@ -36,8 +30,8 @@
 	<aside class="sidemenu">
 		<p>記事編集</p>
 		<input type="search" placeholder="記事のタイトルを入力"/>
-		<a href="edit-article.html"><button>編集</button></a>
-		<a href="delete.html"><button>削除</button></a>
+		<a href="edit-article.jsp"><button>編集</button></a>
+		<a href="delete.jsp"><button>削除</button></a>
 	</aside>
 	</div>
 </div>
