@@ -33,7 +33,6 @@ public class LoginAction implements Action {
 				
 				forwardPath = null;
 				response.sendRedirect("/" + request.getServletContext().getServletContextName() + "/top.jsp");
-//				response.sendRedirect("/bookStore/Top.jsp");
 				
 			}else{
 				request.setAttribute("error", "メールアドレスもしくはパスワードが違います");

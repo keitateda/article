@@ -13,7 +13,7 @@ public class LogoutAction implements Action{
 			throws ServletException, IOException {
 		
 		request.getSession().invalidate();
-		response.sendRedirect("login");
+		response.sendRedirect("login");// ログイン画面にリダイレクト
 		
 		// TODO Auto-generated method stub
 		return null;
