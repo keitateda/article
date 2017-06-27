@@ -15,6 +15,7 @@ a{
 	text-decoration:none;
 }
 
+
 /* ログイン画面　*/
 .rounded (@radius: 6px) {
   -webkit-border-radius: @radius;
@@ -41,8 +42,8 @@ a{
 }
 
 form {
-  margin:60px auto;
-  background:@link;
+  margin:70px auto;
+  background:@text;
   width:347px;
   text-align:center;
   padding:40px;
