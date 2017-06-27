@@ -11,7 +11,7 @@
 
  <body>
 <form>
-  <h1>Brog Site</h1>
+  <h1>Blog Site</h1>
   
   <input type="text" placeholder="userName"/>
   <input type="text" placeholder="email"/>

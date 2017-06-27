@@ -9,12 +9,11 @@
 
  <body>
  <form action="login.do" method="post">
-  <h1>Brog Site</h1>
+  <h1>Blog Site <img src="pen.png" alt="pen" width="30px" height="30px"/></h1>
    <fieldset>
   <input name="email" placeholder="email"/>
   <input type="password"  name="password" placeholder="Password"/>
-  <!--   <button>Login</button> -->
-  <input type="submit" value="Login">
+  <button>Login</button>
   
   </fieldset>
   <div align="left"><a href="signUp.html">Create New Account</a></div>

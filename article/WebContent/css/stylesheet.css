@@ -5,10 +5,12 @@
 @button: #f26964;
 @bottom: #ab4b47;
 
+
 /* body　*/
 body {
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro',  '15px/1.25 ',Alefsans-serif;
 	background-color:#7f8c8d;
+	background-image: url("greyParper.jpg");
 }
 
 a{
@@ -123,8 +125,6 @@ button {
 	font-size:32px
 }
 
-
-
 /* 記事タイトル一覧 */
 .article-list {
 	margin-top:0;
@@ -148,7 +148,7 @@ button {
 	display:block;
 	padding:5px;
 	color:@text;
-	font-size:14px;
+	font-size:18px;
 	text-decoration:none
 }
 
@@ -157,7 +157,7 @@ button {
 	margin-top:0;
 	margin-bottom:10px;
 	color:@text;
-	font-size:18px
+	font-size:20px
 }
 
 .box5 {
@@ -246,7 +246,7 @@ button:active {
 }
 
 .menu li a:hover {
-	background-color:#f5f5f5;
+	background-color:#E3E3E3;
 }
 
 .menu ul:after {
@@ -262,7 +262,7 @@ button:active {
 
 /* BOX2をバーの形に　*/
 .box2 {
-	background-color: #bdc3c7;
+	background-color: #f5f5f5;
 }
 
 /* BOXの上下間隔　*/
@@ -288,7 +288,7 @@ button:active {
 
 /* ########## 599px以下 ########## */
 @media (max-width: 599px){
-	
+
 /* メニュー */
 .menu li a	{
 	padding: 10px 3px;
@@ -303,8 +303,11 @@ button:active {
 }
 
 .box3 {
-	padding-top: 25px
+	padding-top: 25px;
 }
+
+.box4 {
+	padding-top: 25px;
 }
 
 /* ########## 600px以上～767px以下 ########## */

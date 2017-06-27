@@ -2,6 +2,6 @@
 
 <div class="box5">
 	<div class="copyright">
-	<p>Copyright &copy; Brog Site</p>
+	<p>Copyright &copy; Blog Site</p>
 	</div>
 </div>
