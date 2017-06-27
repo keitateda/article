@@ -10,8 +10,6 @@
 </head>
 
 <body>
-<div class="main">
-
 <div class="box1">
 	<div class="site">
 		<h1>Brog Site</h1>
