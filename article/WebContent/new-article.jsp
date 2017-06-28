@@ -19,7 +19,7 @@
 <div class="boxA">
 	<div class="box3">
 		<article class="article-list">
-		<p>新規投稿</p>
+		<p><img src="editer.png" width="25px" height="25px" align="left"/>&thinsp;新規投稿</p>
 		<form id="contribution" method="post" action="article/insert.do">
 		<fieldset>
 				<input type="text" name="title" placeholder="タイトル"/>

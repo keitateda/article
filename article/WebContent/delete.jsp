@@ -17,9 +17,10 @@
 <div class="boxA">
 	<div class="box3">
 		<article class="article-list">
-		<p>記事の削除</p>
-		<form id="del" method="post" action="article/remove.do">
-				<th><label for="delete">削除する記事</label></th>
+		<p><img src="trash.png" width="25px" height="25px" align="left"/>&thinsp;記事の削除</p>
+		<br>
+		<form id="del" method="post" action="article/remove.do"　>
+				<th><label for="delete"　>削除する記事</label></th>
 			<td>
 				<h:select table="ARTICLE" dataSource="ds/article" name="article_id">
 					<h:option value="article_id" display="title" />
