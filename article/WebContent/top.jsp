@@ -29,7 +29,7 @@
 		<aside class="sidemenu">
 		<form  action="article.jsp">
 		<p><img src="search.png" width="25px" height="25px" align="left"/>&thinsp;記事検索</p>
-		<input type="search" name="find" placeholder="記事のタイトルor日付を入力"/>
+		<input type="search" name="find" placeholder="記事のタイトル"/>
 		<a href="article.jsp"><button>検索</button></a>
 		</form>
 	<aside class="sidemenu">
