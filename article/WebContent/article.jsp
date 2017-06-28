@@ -10,11 +10,11 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
-	<sql:query var="Allcontents" dataSource="ds/article">
+	<sql:query var="allcontents" dataSource="ds/article">
 		SELECT * FROM ARTICLE WHERE article_id = ${param.id}
 	</sql:query>
-<c:set var="articles" value="${Allcontents.rows[0]}"/>
-
+	<c:set var="articles" value="${allcontents.rows[0]}"/>
+	
 <title>top</title>
 </head>
 
