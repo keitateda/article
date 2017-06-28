@@ -23,7 +23,6 @@
 			</ul>
 		</article>
 	</div>
-
 	<div class="box4">
 		<aside class="sidemenu">
 		<form action="article.jsp">
@@ -32,10 +31,12 @@
 		<a href="article.jsp"><button>検索</button></a>
 		</form>
 	<aside class="sidemenu">
+		<form action="">
 		<p>記事編集</p>
 		<input type="search" placeholder="記事のタイトルを入力"/>
 		<a href="edit-article.jsp"><button>編集</button></a>
 		<a href="delete.jsp"><button>削除</button></a>
+		</form>
 	</aside>
 	</div>
 </div>

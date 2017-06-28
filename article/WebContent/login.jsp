@@ -8,7 +8,7 @@
 </head>
 
  <body>
- <form action="login.do" method="post">
+ <form action="login.do" method="post" style="margin:70px auto;padding:40px;text-align:center;">
   <h1>Blog Site <img src="pen.png" alt="pen" width="30px" height="30px"/></h1>
    <fieldset>
   <input name="email" placeholder="email"/>
@@ -16,7 +16,7 @@
   <button>Login</button>
   
   </fieldset>
-  <div align="left"><a href="signUp.html">Create New Account</a></div>
+  <div align="left"><a href="signUp.jsp">Create New Account</a></div>
   <p class="error"><br>${error}</p>
 </form>
  </body>

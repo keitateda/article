@@ -5,6 +5,8 @@
 @button: #f26964;
 @bottom: #ab4b47;
 
+/*  全体のレイアウト、背景(body)、サイト名、上部メニュー、入力フォーム、送信ボタンの形式を決めているよ  */
+/*  レスポンシブ対応はちょっと中途半端（PC画面上での拡大縮小では大きな崩れ無し)         */
 
 /* body　*/
 body {
@@ -44,11 +46,9 @@ a{
 }
 
 form {
-  margin:70px auto;
   background:@text;
   width:347px;
-  text-align:center;
-  padding:40px;
+  text-align:left;
   .rounded;
 }
 
