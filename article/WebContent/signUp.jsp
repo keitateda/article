@@ -10,14 +10,14 @@
 </head>
 
  <body>
-<form>
-  <h1>Blog Site</h1>
+<form action="" method="post" style="margin:70px auto;padding:40px;text-align:center;">
+  <h1>Blog Site <img src="pen.png" alt="pen" width="30px" height="30px"/></h1>
   
   <input type="text" placeholder="userName"/>
   <input type="text" placeholder="email"/>
   <input type="password" placeholder="Password"/>
   <button>Create new Account</button>
-  <div align="left"><a href="login.html">←back</a></div>
+  <div align="left"><a href="login.jsp">←back</a></div>
 </form>
  </body>
 </html>
