@@ -39,10 +39,11 @@ public class Article implements Serializable {
 
 	//id以外の項目がセットされたコンストラクタ
 	public  Article(
-			String contents, String title, Date uploadDay, String uploadName, Category category) {
+			String title, String contents, Date uploadDay, String uploadName, Category category) {
 		super();
-		this.contents = contents;
 		this.title = title;
+		this.contents = contents;
+		
 		this.uploadDay = uploadDay;
 		this.uploadName = uploadName;
 		this.category = category;

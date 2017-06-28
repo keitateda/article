@@ -62,6 +62,7 @@ public class InsertAction implements Action {
 			
 			fowardPath = null;
 			articles = new ToppageAction().getAll();
+			request.getSession().setAttribute("articles", articles);
 			responce.sendRedirect("/article/top.jsp");
 		} catch (DaoException e) {
 			// TODO: handle exception
