@@ -18,10 +18,10 @@
 	</c:if>
 	
 	<c:if test="${!empty param.find}">
-	<sql:query var="findbytitle">
+	<sql:query var="findbytitle" dataSource="ds/article">
 		SELECT * FROM ARTICLE WHERE title = ${param.find}
 	</sql:query>
-	<c:set var="articles" value="${findbytitle.row[0]}"/>
+	<c:set var="articles" value="${findbytitle.rows[0]}"/>
 	</c:if>
 
 <title>top</title>
@@ -31,6 +31,7 @@
 <jsp:include page="page-header.jsp"></jsp:include>
 
 <div class="boxA">
+	
 	<div class="box3">
 		<article class="article-list">
 			<p>記事内容</p>
