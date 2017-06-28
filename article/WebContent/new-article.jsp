@@ -15,11 +15,15 @@
 	<div class="box3">
 		<article class="article-list">
 		<p>新規投稿</p>
-		<form method="post" action="Insert.do">
+		<form method="post" action="article/Insert.do">
 		<fieldset>
-				<input type="" name="title" placeholder="タイトル"/>
+				<input type="text" name="title" placeholder="タイトル"/>
 				<input type="date" name="date"/>
-				<textarea name="content" cols="30" rows="10" wrap="" placeholder="内容を入力"></textarea>
+				<input type="text" name="name"placeholder="投稿者"/>
+				<input type="text" name="category"placeholder="カテゴリ"/>
+				<button>投稿</button>
+				
+				<textarea name="contents" cols="30" rows="10" wrap="" placeholder="内容を入力"></textarea>
 		</fieldset>		
 		</form>
 		</article>
@@ -30,7 +34,7 @@
 		<p>タイトル・日付・内容を入力して下さい。</p>
 			<br><br><br></br></br></br></br></br>
 		<aside class="sidemenu">
-		<button>投稿</button>
+		<!--　<button>投稿</button> -->
 		<a href="top.jsp"><button>戻る</button></a>
 		</aside>
 	</div>
