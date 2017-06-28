@@ -15,11 +15,11 @@
 	<div class="box3">
 		<article class="article-list">
 		<p>新規投稿</p>
-		<form method="post" action="article/Insert.do">
+		<form method="post" action="article/insert.do">
 		<fieldset>
 				<input type="text" name="title" placeholder="タイトル"/>
-				<input type="date" name="date"/>
-				<input type="text" name="name"placeholder="投稿者"/>
+				<input type="date" name="uploadDay"/>
+				<input type="text" name="uploadName"placeholder="投稿者"/>
 				<input type="text" name="category"placeholder="カテゴリ"/>
 				<button>投稿</button>
 				

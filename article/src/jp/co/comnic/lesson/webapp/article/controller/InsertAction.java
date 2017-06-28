@@ -37,7 +37,7 @@ public class InsertAction implements Action {
 			String contents = request.getParameter("contents");
 			String uploadDay = request.getParameter("uploadDay");
 			String name = request.getParameter("uploadName");
-			String categoryId = request.getParameter("categoryId");
+			String categoryId = request.getParameter("category");
 			//確認
 			System.out.println("title:"+title);
 			System.out.println("contents:"+contents);
@@ -47,7 +47,7 @@ public class InsertAction implements Action {
 			
 			//カテゴリインスタンスからidを検索して持ってくる
 //			SimpleDateFormat().applyPattern(uploadDay);
-			Date date = new SimpleDateFormat().parse(uploadDay);
+			Date date = new SimpleDateFormat("yy-MM-dd").parse(uploadDay);
 			Category category = new CategoryDao().findById(Integer.parseInt(categoryId));
 			
 			// パラメーターを使用してArticleインスタンスを生成
