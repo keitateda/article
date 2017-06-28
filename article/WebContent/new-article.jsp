@@ -1,4 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<%@ taglib uri="http://jp.co.comnic/lesson/webapp/article/taglibs/html-extension" prefix="h" %>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -20,10 +25,15 @@
 				<input type="text" name="title" placeholder="タイトル"/>
 				<input type="date" name="uploadDay"/>
 				<input type="text" name="uploadName"placeholder="投稿者"/>
-				<input type="text" name="category"placeholder="カテゴリ"/>
-				<button>投稿</button>
-				
 				<textarea name="contents" cols="30" rows="10" wrap="" placeholder="内容を入力"></textarea>
+				
+				<th><label for="article">カテゴリ </label></th>
+			<td>
+				<h:select table="CATEGORY" dataSource="ds/article" name="categoryId">
+					<h:option value="id" display="name" />
+				</h:select>
+			</td>
+				<button>投稿</button>
 		</fieldset>		
 		</form>
 		</article>

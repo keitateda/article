@@ -37,7 +37,7 @@ public class InsertAction implements Action {
 			String contents = request.getParameter("contents");
 			String uploadDay = request.getParameter("uploadDay");
 			String name = request.getParameter("uploadName");
-			String categoryId = request.getParameter("category");
+			String categoryId = request.getParameter("categoryId");
 			//確認
 			System.out.println("title:"+title);
 			System.out.println("contents:"+contents);
@@ -57,7 +57,7 @@ public class InsertAction implements Action {
 			new Basedao().insert(x);
 			
 			fowardPath = null;
-			responce.sendRedirect(redirectPath);
+			responce.sendRedirect("/article/top.jsp");
 		} catch (DaoException e) {
 			// TODO: handle exception
 		

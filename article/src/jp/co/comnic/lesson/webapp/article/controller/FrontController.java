@@ -15,7 +15,7 @@ public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
 	protected void doService(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
-			
+		request.setCharacterEncoding("utf-8");
 		Action action = ActionFactory.getAction(request.getServletPath());
 			
 		String forwardPath = action.execute(request, response);
