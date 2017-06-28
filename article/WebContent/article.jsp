@@ -10,11 +10,20 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
+	<c:if test="${!empty param.id}">
 	<sql:query var="allcontents" dataSource="ds/article">
 		SELECT * FROM ARTICLE WHERE article_id = ${param.id}
 	</sql:query>
 	<c:set var="articles" value="${allcontents.rows[0]}"/>
+	</c:if>
 	
+	<c:if test="${!empty param.find}">
+	<sql:query var="findbytitle">
+		SELECT * FROM ARTICLE WHERE title = ${param.find}
+	</sql:query>
+	<c:set var="articles" value="${findbytitle.row[0]}"/>
+	</c:if>
+
 <title>top</title>
 </head>
 
