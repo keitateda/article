@@ -1,4 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -6,6 +10,11 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
+	<sql:query var="Allcontents" dataSource="ds/article">
+		SELECT * FROM ARTICLE WHERE article_id = ${param.id}
+	</sql:query>
+<c:set var="articles" value="${Allcontents.rows[0]}"/>
+
 <title>top</title>
 </head>
 
@@ -15,14 +24,15 @@
 <div class="boxA">
 	<div class="box3">
 		<article class="article-list">
-			<p>記事タイトル一覧</p>
+			<p>記事内容</p>
 				<ul>
-				<li>タイトル</li>
-				<li>日付</li>
-				<li>内容</li>
+				<li>タイトル :${articles.title}</li>
+				<li>日付:${articles.upload_day}</li>
+				<li>内容
+				${articles.contents}
+				</li>
 				</ul>
 		</article>
-		<p>（記事用のレイアウト）</p>
 	</div>
 </div>
 

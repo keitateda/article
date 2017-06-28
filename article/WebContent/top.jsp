@@ -16,7 +16,8 @@
 		<h1>記事タイトル一覧</h1>
 			<ul>
 				<c:forEach var="article" items="${articles}">
-				<li><a href="article.jsp">記事:${article.title}</a></li>
+					<c:set var="id" value="${article.articleId}"/>
+					<li><a href="article.jsp?id=${id}">記事:${article.title}</a></li>
 				</c:forEach>
 			</ul>
 		</article>
