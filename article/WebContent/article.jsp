@@ -19,7 +19,7 @@
 	
 	<c:if test="${!empty param.find}">
 	<sql:query var="findbytitle" dataSource="ds/article">
-		SELECT * FROM ARTICLE WHERE title = ${param.find}
+		SELECT * FROM ARTICLE WHERE title = '${param.find}'
 	</sql:query>
 	<c:set var="articles" value="${findbytitle.rows[0]}"/>
 	</c:if>
