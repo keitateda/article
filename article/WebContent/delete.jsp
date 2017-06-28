@@ -29,7 +29,7 @@
 	<br><br><br></br></br></br></br></br>
 		<button>削除</button>
 	<aside class="sidemenu">
-		<a href="top.html"><button>戻る</button></a>
+		<a href="top.jsp"><button>戻る</button></a>
 	</aside>
 	</div>
 </div>

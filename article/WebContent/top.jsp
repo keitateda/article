@@ -14,6 +14,7 @@
 	<div class="box3">
 		<article class="article-list">
 		<h1>記事タイトル一覧</h1>
+		<br>
 			<ul>
 				<c:forEach var="article" items="${articles}">
 					<c:set var="id" value="${article.articleId}"/>

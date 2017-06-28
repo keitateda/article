@@ -28,11 +28,17 @@
 				<ul>
 				<li>タイトル :${articles.title}</li>
 				<li>日付:${articles.upload_day}</li>
-				<li>内容
-				${articles.contents}
-				</li>
+				<li>内容</li>
+				<li>${articles.contents}</li>
 				</ul>
 		</article>
+	</div>
+	<div class="box4">
+	<br><br><br></br></br></br></br></br>
+	<br><br><br></br>	
+	<aside class="sidemenu">
+		<a href="top.jsp"><button>戻る</button></a>
+	</aside>
 	</div>
 </div>
 

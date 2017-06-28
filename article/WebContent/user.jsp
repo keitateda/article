@@ -3,14 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-<!-- <link rel="stylesheet" type="text/css" href="css/grid-guide.css" /> -->
-<title>ユーザ</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+	<title>ユーザ</title>
 </head>
 <body>
-<jsp:include page="page-header.jsp"></jsp:include>
-<div class="boxA">
+	<jsp:include page="page-header.jsp"></jsp:include>
+	<div class="boxA">
 	<div class="box3">
 		<article class="article-list">
 		<h1>ユーザ情報</h1>
@@ -23,14 +22,14 @@
 		</article>
 	</div>
 
-<div class="box4">
-	<p>ユーザの情報ページです。</p>
-	<p>確認・編集ができます。</p>
-	<br><br><br></br></br></br></br></br>
-		<button>編集</button>
-	<aside class="sidemenu">
-		<a href="top.html"><button>戻る</button></a>
-	</aside>
+	<div class="box4">
+		<p>ユーザの情報ページです。</p>
+		<p>確認・編集ができます。</p>
+		<br><br><br></br></br></br></br></br>
+			<button>編集</button>
+		<aside class="sidemenu">
+			<a href="top.jsp"><button>戻る</button></a>
+		</aside>
 	</div>
 	</div>
 </div>
