@@ -2,7 +2,9 @@ package jp.co.comnic.lesson.webapp.article.controller;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -21,13 +23,15 @@ public class InsertAction implements Action {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		String servletPath =request.getServletPath();
+//		String servletPath =request.getServletPath();
 		
-		String redirectPath = "./";
+//		String redirectPath = "./";
 		String fowardPath = "new";
 		
+		List<Article> articles = new ArrayList<>(); 
+		
 		try {
-			Object  entity = Class.forName(ContorollerUtils.getFullyQualitifiedClassName(servletPath)).newInstance();
+//			Object  entity = Class.forName(ContorollerUtils.getFullyQualitifiedClassName(servletPath)).newInstance();
 //			ContorollerUtils.populateEntity(request, entity);
 			
 			
@@ -57,6 +61,7 @@ public class InsertAction implements Action {
 			new Basedao().insert(x);
 			
 			fowardPath = null;
+			articles = new ToppageAction().getAll();
 			responce.sendRedirect("/article/top.jsp");
 		} catch (DaoException e) {
 			// TODO: handle exception
