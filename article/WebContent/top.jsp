@@ -13,12 +13,16 @@
 <div class="boxA">
 	<div class="box3">
 		<article class="article-list">
-		<h1>記事タイトル一覧</h1>
+		<p>記事タイトル一覧</p>
 		<br>
 			<ul>
 				<c:forEach var="article" items="${articles}">
 					<c:set var="id" value="${article.articleId}"/>
-					<li><a href="article.jsp?id=${id}">記事:${article.title}</a></li>
+					<li><a href="article.jsp?id=${id}">
+					<img src="note.png" width="25px" height="25px" align="left"/>&thinsp;${article.title}
+					</a>
+					</li>
+					<br>
 				</c:forEach>
 			</ul>
 		</article>
@@ -31,9 +35,9 @@
 		<a href="article.jsp"><button>検索</button></a>
 		</form>
 	<aside class="sidemenu">
+	<br><br>
 		<form action="">
 		<p>記事編集</p>
-		<input type="search" placeholder="記事のタイトルを入力"/>
 		<a href="edit-article.jsp"><button>編集</button></a>
 		</form>
 		<a href="delete.jsp"><button>削除</button></a>

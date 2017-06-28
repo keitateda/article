@@ -39,8 +39,8 @@
 
 	<div class="box4">
 		<p>新しく投稿する記事を作成します。</p>
-		<p>タイトル・日付・内容を入力して下さい。</p>
-		<p>入力が完了したら投稿ボタンを押してください。</p>
+		<p>タイトル・日付・投稿者名・カテゴリ・内容を
+		<p>入力し、投稿して下さい。</p>
 			<br><br><br></br></br></br></br></br>
 		<aside class="sidemenu">
 		<button form="contribution">投稿</button>

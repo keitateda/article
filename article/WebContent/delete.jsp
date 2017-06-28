@@ -18,26 +18,22 @@
 	<div class="box3">
 		<article class="article-list">
 		<p>記事の削除</p>
-		<form method="post" action="article/remove.do">
-				<input type="title" placeholder="指定した記事タイトルが出るように"/>
-				<input type="date" name="指定した日付が出るように"/>
-				
+		<form id="del" method="post" action="article/remove.do">
 				<th><label for="delete">削除する記事</label></th>
 			<td>
 				<h:select table="ARTICLE" dataSource="ds/article" name="article_id">
 					<h:option value="article_id" display="title" />
 				</h:select>
-				<button>削除</button>
 			</td>
 		</form>
 		</article>
 </div>
 
 	<div class="box4">
-	<p>指定した記事を削除します。</p>
-	<p>よろしければ削除ボタンを押してください。</p>
+	<p>選択した記事を削除します。</p>
+	<p>記事を選択し、削除ボタンを押してください。</p>
 	<br><br><br></br></br></br></br></br>
-		<button>削除</button>
+		<button form="del">削除</button>
 	<aside class="sidemenu">
 		<a href="top.jsp"><button>戻る</button></a>
 	</aside>
