@@ -12,7 +12,7 @@
 	<div class="boxA">
 	<div class="box3">
 		<article class="article-list">
-		<h1>ユーザ情報</h1>
+		<p>ユーザ情報</p>
 		<br></br>
 		<p><img src="face.png" alt="アイコン" /></p>	
 		<br>
@@ -25,6 +25,7 @@
 	<div class="box4">
 		<p>ユーザの情報ページです。</p>
 		<p>確認・編集ができます。</p>
+		<p>(拡張)</p>
 		<br><br><br></br></br></br></br></br>
 			<button>編集</button>
 		<aside class="sidemenu">

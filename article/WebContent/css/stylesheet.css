@@ -19,6 +19,25 @@ a{
 	text-decoration:none;
 }
 
+a:LINK {
+	color:#111;
+}
+
+a:VISITED {
+	color:#111;
+}
+
+a:HOVER {
+	color: #626262;
+}
+
+/* ラベル　*/
+select {
+	font-size: 14px;
+	background-color:black; 
+	background: rgba(0,0,0,0.2);
+}
+
 
 /* ログイン画面　*/
 .rounded (@radius: 6px) {
@@ -107,8 +126,8 @@ button {
 	.rounded;
 	.trans;
 	font-size:1.2em;
-	background:@button;
 	color:@base;
+	background:@base;
 	box-shadow:0px 3px 0px @bottom;
 	cursor:pointer;
 }

@@ -3,7 +3,7 @@
 
 <div class="box1">
 	<div class="site">
-		<h1>Blog Site <img src="pen.png" alt="pen" width="30px" height="30px"/></h1>
+		<h1><a href="top.jsp">Blog Site <img src="pen.png" alt="pen" width="30px" height="30px"/> </a></h1>
 	</div>
 </div>
 <div class="box2">

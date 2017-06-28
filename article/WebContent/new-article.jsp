@@ -20,20 +20,18 @@
 	<div class="box3">
 		<article class="article-list">
 		<p>新規投稿</p>
-		<form method="post" action="article/insert.do">
+		<form id="contribution" method="post" action="article/insert.do">
 		<fieldset>
 				<input type="text" name="title" placeholder="タイトル"/>
 				<input type="date" name="uploadDay"/>
-				<input type="text" name="uploadName"placeholder="投稿者"/>
-				<textarea name="contents" cols="30" rows="10" wrap="" placeholder="内容を入力"></textarea>
-				
-				<th><label for="article">カテゴリ </label></th>
-			<td>
+				<input type="text" name="uploadName" placeholder="投稿者"/>
+				<label for="article"><font size="2px" color="#404040">カテゴリ</font></label>
+				<td>
 				<h:select table="CATEGORY" dataSource="ds/article" name="categoryId">
 					<h:option value="id" display="name" />
 				</h:select>
-			</td>
-				<button>投稿</button>
+				</td>
+				<textarea name="contents" cols="30" rows="10" wrap="" placeholder="内容を入力"></textarea>
 		</fieldset>		
 		</form>
 		</article>
@@ -42,9 +40,10 @@
 	<div class="box4">
 		<p>新しく投稿する記事を作成します。</p>
 		<p>タイトル・日付・内容を入力して下さい。</p>
+		<p>入力が完了したら投稿ボタンを押してください。</p>
 			<br><br><br></br></br></br></br></br>
 		<aside class="sidemenu">
-		<!--　<button>投稿</button> -->
+		<button form="contribution">投稿</button>
 		<a href="top.jsp"><button>戻る</button></a>
 		</aside>
 	</div>
