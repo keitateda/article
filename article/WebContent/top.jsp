@@ -26,9 +26,11 @@
 
 	<div class="box4">
 		<aside class="sidemenu">
+		<form action="article.jsp">
 		<p>記事検索</p>
 		<input type="search" placeholder="記事のタイトルor日付を入力"/>
-		<button>検索</button>
+		<a href="article.jsp"><button>検索</button></a>
+		</form>
 	<aside class="sidemenu">
 		<p>記事編集</p>
 		<input type="search" placeholder="記事のタイトルを入力"/>
