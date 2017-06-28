@@ -1,6 +1,8 @@
 package jp.co.comnic.lesson.webapp.article.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import jp.co.comnic.lesson.webapp.article.dao.Basedao;
 import jp.co.comnic.lesson.webapp.article.dao.DaoException;
+import jp.co.comnic.lesson.webapp.article.model.Article;
 
 /**
  * <p>レコードの削除処理を実行するActionインターフェイスの実装。</p>
@@ -28,6 +31,7 @@ public class RemoveAction implements Action {
 		String forwardPath = "./";
 //		String redirectPath = "./";
 		Integer id = Integer.parseInt(request.getParameter("article_id")); // 削除するレコードのID
+		List<Article> articles = new ArrayList<>(); 
 		
 		try {
 			
@@ -37,6 +41,9 @@ public class RemoveAction implements Action {
 			new Basedao().remove(Class.forName(entityClass), id);
 			
 			forwardPath = null;
+			
+			articles = new ToppageAction().getAll();
+			request.getSession().setAttribute("articles", articles);
 			response.sendRedirect("/article/top.jsp");
 			
 		} catch (DaoException e) {
