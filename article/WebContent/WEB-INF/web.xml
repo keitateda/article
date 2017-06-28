@@ -63,5 +63,16 @@
 		<url-pattern>/insert</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<jsp-file>/article/delete.jsp</jsp-file>
+		
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
 	
 </web-app>

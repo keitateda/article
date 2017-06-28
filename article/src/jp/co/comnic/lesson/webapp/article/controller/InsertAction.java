@@ -19,7 +19,7 @@ import jp.co.comnic.lesson.webapp.article.model.Category;
 public class InsertAction implements Action {
 
 	@Override
-	public String execute(HttpServletRequest request, HttpServletResponse responce)
+	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
@@ -63,7 +63,7 @@ public class InsertAction implements Action {
 			fowardPath = null;
 			articles = new ToppageAction().getAll();
 			request.getSession().setAttribute("articles", articles);
-			responce.sendRedirect("/article/top.jsp");
+			response.sendRedirect("/article/top.jsp");
 		} catch (DaoException e) {
 			// TODO: handle exception
 		

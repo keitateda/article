@@ -35,8 +35,8 @@
 		<p>記事編集</p>
 		<input type="search" placeholder="記事のタイトルを入力"/>
 		<a href="edit-article.jsp"><button>編集</button></a>
-		<a href="delete.jsp"><button>削除</button></a>
 		</form>
+		<a href="delete.jsp"><button>削除</button></a>
 	</aside>
 	</div>
 </div>

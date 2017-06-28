@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<%@ taglib uri="http://jp.co.comnic/lesson/webapp/article/taglibs/html-extension" prefix="h" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -16,9 +18,17 @@
 	<div class="box3">
 		<article class="article-list">
 		<p>記事の削除</p>
-		<form method="post" action="#">
+		<form method="post" action="article/remove.do">
 				<input type="title" placeholder="指定した記事タイトルが出るように"/>
 				<input type="date" name="指定した日付が出るように"/>
+				
+				<th><label for="delete">削除する記事</label></th>
+			<td>
+				<h:select table="ARTICLE" dataSource="ds/article" name="article_id">
+					<h:option value="article_id" display="title" />
+				</h:select>
+				<button>削除</button>
+			</td>
 		</form>
 		</article>
 </div>
