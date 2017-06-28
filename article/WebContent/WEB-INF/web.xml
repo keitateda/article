@@ -18,18 +18,18 @@
 	</context-param>
 	
 	<context-param>
-		<param-name>/articles/remove.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.article.controller.RemoveAction</param-value>
+		<param-name>/article/remove.do</param-name>
+		<param-value>jp.co.comnic.lesson.webapp.article.controller.RemoveAction</param-value>
 	</context-param>
 	
 	<context-param>
-		<param-name>/articles/insert.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.article.controller.InsertAction</param-value>
+		<param-name>/article/insert.do</param-name>
+		<param-value>jp.co.comnic.lesson.webapp.article.controller.InsertAction</param-value>
 	</context-param>
 	
 	<context-param>
-		<param-name>/articles/edit.do</param-name>
-		<param-value>jp.co.comnic.javalesson.webapp.article.controller.UpdateAction</param-value>
+		<param-name>/article/edit.do</param-name>
+		<param-value>jp.co.comnic.lesson.webapp.article.controller.UpdateAction</param-value>
 	</context-param>
 	
 	<!-- Settings for JSP pages -->	
@@ -45,12 +45,22 @@
 	
 	<servlet>
 		<servlet-name>Top</servlet-name>
-		<jsp-file>/top.jsp</jsp-file>
+		<jsp-file>/article/top.jsp</jsp-file>
 	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>Top</servlet-name>
 		<url-pattern>/top</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Insert</servlet-name>
+		<jsp-file>/new-article.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Insert</servlet-name>
+		<url-pattern>/insert</url-pattern>
 	</servlet-mapping>
 	
 	

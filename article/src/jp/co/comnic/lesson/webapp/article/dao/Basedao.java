@@ -10,6 +10,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
+
 public class Basedao {
 	
 	protected EntityManager em = Persistence.createEntityManagerFactory("article").createEntityManager();
@@ -35,6 +36,8 @@ public class Basedao {
 	 * @return 検索結果のエンティティ・オブジェクト
 	 */
 	
+	
+	
 	public <T> T findById(Class<T> entityClass, Serializable id){
 		return em.find(entityClass, id);
 	}
@@ -49,6 +52,7 @@ public class Basedao {
 		
 			try{
 				tx.begin();
+				
 				em.persist(entity);
 				tx.commit();
 			} catch (Exception e) {

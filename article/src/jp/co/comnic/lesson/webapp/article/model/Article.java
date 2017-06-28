@@ -15,6 +15,7 @@ public class Article implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="article_id")
 	private int articleId;
 
@@ -37,7 +38,8 @@ public class Article implements Serializable {
 	}
 
 	//id以外の項目がセットされたコンストラクタ
-	public Article(String contents, String title, Date uploadDay, String uploadName, Category category) {
+	public  Article(
+			String contents, String title, Date uploadDay, String uploadName, Category category) {
 		super();
 		this.contents = contents;
 		this.title = title;
@@ -95,4 +97,11 @@ public class Article implements Serializable {
 		this.category = category;
 	}
 
+	@Override
+	public String toString() {
+		return "Article [articleId=" + articleId + ", contents=" + contents + ", title=" + title + ", uploadDay="
+				+ uploadDay + ", uploadName=" + uploadName + ", category=" + category + "]";
+	}
+
+	
 }
