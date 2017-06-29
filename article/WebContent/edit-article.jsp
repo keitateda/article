@@ -27,7 +27,7 @@
 	<p>記事の編集ができます。</p>
 	<p>完了したら編集完了ボタンを押してください。</p>
 	<br><br><br></br></br></br></br></br>
-		<button>投稿</button>
+		<a href="top.jsp"><button>投稿</button></a>
 	<aside class="sidemenu">
 		<a href="top.jsp"><button>戻る</button></a>
 	</aside>
