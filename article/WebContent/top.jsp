@@ -34,10 +34,8 @@
 		</form>
 	<aside class="sidemenu">
 	<br>
-		<form action="">
 		<p><img src="edit.png" width="25px" height="25px" align="left"/>&thinsp;記事編集</p>
 		<a href="edit-article.jsp"><button>編集</button></a>
-		</form>
 		<a href="delete.jsp"><button>削除</button></a>
 	</aside>
 	</div>
