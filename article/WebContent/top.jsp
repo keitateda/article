@@ -18,7 +18,7 @@
 			<ul>
 				<c:forEach var="article" items="${articles}">
 					<c:set var="id" value="${article.articleId}"/>
-					<li>
+					<li> 
 					<a href="article.jsp?id=${id}">
 					<img src="article1.png" width="25px" height="25px" align="left"/>&thinsp;
 					${article.title}
