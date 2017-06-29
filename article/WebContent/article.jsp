@@ -39,7 +39,7 @@
 				<li>タイトル :${articles.title}</li>
 				<li>日付:${articles.upload_day}</li>
 				<li>内容</li>
-				<li>${articles.contents}</li>
+				<li><textarea disabled="disabled" readonly="readonly">${articles.contents}</textarea></li>
 				</ul>
 		</article>
 	</div>
