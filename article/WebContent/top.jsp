@@ -18,7 +18,11 @@
 			<ul>
 				<c:forEach var="article" items="${articles}">
 					<c:set var="id" value="${article.articleId}"/>
-					<li><a href="article.jsp?id=${id}">記事：${article.title}</a>
+					<li>
+					<a href="article.jsp?id=${id}">
+					<img src="article1.png" width="25px" height="25px" align="left"/>&thinsp;
+					${article.title}
+					</a>
 					</li>
 					<br>
 				</c:forEach>
@@ -28,13 +32,19 @@
 	<div class="box4">
 		<aside class="sidemenu">
 		<form  action="article.jsp">
-		<p><img src="search.png" width="25px" height="25px" align="left"/>&thinsp;記事検索</p>
-		<input type="search" name="find" placeholder="記事のタイトル"/>
-		<a href="article.jsp"><button>検索</button></a>
+			<p>
+			<img src="search.png" width="25px" height="25px" align="left"/>&thinsp;
+			記事検索
+			</p>
+			<input type="search" name="find" placeholder="記事のタイトル"/>
+			<a href="article.jsp"><button>検索</button></a>
 		</form>
 	<aside class="sidemenu">
-	<br>
-		<p><img src="edit.png" width="25px" height="25px" align="left"/>&thinsp;記事編集</p>
+		<br>
+			<p>
+			<img src="edit.png" width="25px" height="25px" align="left"/>&thinsp;
+			記事編集
+			</p>
 		<a href="edit-article.jsp"><button>編集</button></a>
 		<a href="delete.jsp"><button>削除</button></a>
 	</aside>
